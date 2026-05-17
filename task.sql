@@ -23,7 +23,7 @@ CREATE TABLE ProductDescription (
     CountryID INT,
     FOREIGN KEY (CountryID) REFERENCES Countries(ID) ON DELETE CASCADE,
     PRIMARY KEY (ID)
-) ENGINE=MyISAM;
+) ENGINE=InnoDB;
 
 CREATE TABLE Logs (
     ID INT,
