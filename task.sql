@@ -18,9 +18,9 @@ CREATE TABLE GeoIPCache (
 
 CREATE TABLE ProductDescription (
     ID INT,
-    CountryID INT,
-    ProductID INT,
     Description VARCHAR(200),
+    ProductID INT,
+    CountryID INT,
     FOREIGN KEY (CountryID) REFERENCES Countries(ID) ON DELETE CASCADE,
     PRIMARY KEY (ID)
 ) ENGINE=MyISAM;
